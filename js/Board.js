@@ -18,6 +18,7 @@ $('.create-column').click(function(){
 		success: function(response){
 			var column = new Column(response.id, columnName);
 			board.createColumn(column);
+			
 		}
 	});
 });

@@ -20,6 +20,7 @@ function setupColumns(columns) {
 	columns.forEach(function (column){
 		var col = new Column(column.id, column.name);
 		board.createColumn(col);
+		setupCards(col, column.cards);
 	});
 }
 
